@@ -16,45 +16,13 @@
 docker compose up -d --build
 
 
-## API Endpoints
+## CI/CD Pipeline
 
+The repository includes a GitHub Actions workflow for automated builds.
 
-### Home Endpoint
+For production deployment, configure:
 
-```bash
-http://localhost
-```
+- SERVER_IP
+- SERVER_SSH_KEY
 
-Response:
-
-```json
-{
-  "message": "FastAPI Backend Running"
-}
-```
-
----
-
-### Health Check Endpoint
-
-```bash
-http://localhost/health
-```
-
-Response:
-
-```json
-{
-  "status": "healthy"
-}
-```
-
----
-
-### Swagger API Documentation
-
-```bash
-http://localhost/docs
-```
-
-Use this URL to test and explore all available API endpoints through the FastAPI Swagger UI.
+and connect the workflow to a Linux VPS.
