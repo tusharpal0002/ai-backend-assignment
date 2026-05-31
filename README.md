@@ -16,13 +16,20 @@
 docker compose up -d --build
 
 
-## CI/CD Pipeline
+# Screenshots
 
-The repository includes a GitHub Actions workflow for automated builds.
+## Swagger API Documentation
 
-For production deployment, configure:
+![Swagger API Documentation](screenshots/swagger-docs.png)
 
-- SERVER_IP
-- SERVER_SSH_KEY
+---
 
-and connect the workflow to a Linux VPS.
+## Home Endpoint
+
+![Home Endpoint](screenshots/home-endpoint.png)
+
+---
+
+## Health Check Endpoint
+
+![Health Check Endpoint](screenshots/health-endpoint.png)
