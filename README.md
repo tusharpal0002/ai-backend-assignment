@@ -10,26 +10,44 @@
 - NGINX
 - GitHub Actions
 
-## Run Project
+## API Endpoints
+
+### Home Endpoint
 
 ```bash
-docker compose up -d --build
+http://localhost
+```
 
+Response:
 
-# Screenshots
-
-## Swagger API Documentation
-
-![Swagger API Documentation](screenshots/swagger-docs.png)
-
----
-
-## Home Endpoint
-
-![Home Endpoint](screenshots/home-endpoint.png)
+```json
+{
+  "message": "FastAPI Backend Running"
+}
+```
 
 ---
 
-## Health Check Endpoint
+### Health Check Endpoint
 
-![Health Check Endpoint](screenshots/health-endpoint.png)
+```bash
+http://localhost/health
+```
+
+Response:
+
+```json
+{
+  "status": "healthy"
+}
+```
+
+---
+
+### Swagger API Documentation
+
+```bash
+http://localhost/docs
+```
+
+Use this URL to test and explore all available API endpoints through the FastAPI Swagger UI.
